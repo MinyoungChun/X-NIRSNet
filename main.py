@@ -14,7 +14,6 @@ def main(args):
         
         train_loader, test_loader = get_loaders(args, test_sub_id=test_sub_idx)
 
-        # 모델 생성
         model = X_NIRSNet(
             channels=args.channels, 
             time_points=args.time_points, 
