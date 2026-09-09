@@ -23,7 +23,7 @@ def main(args):
             hidden_unit=args.hidden_units
         ).to(device)
         
-        optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
+        optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr)
         
         # Training Loop
         for epoch in range(args.epochs):
